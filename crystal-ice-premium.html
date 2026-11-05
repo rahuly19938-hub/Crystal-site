@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal Ice | Ice Manufacturing & Supply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#041a2c">
+
+<meta name="description" content="Premium ice manufacturing and reliable ice delivery for hotels, restaurants, events, shops and businesses.">
+
+<style>
+:root {
+    --blue: #087fc4;
+    --dark: #073653;
+    --light: #eaf8ff;
+    --white: #ffffff;
+    --text: #294456;
+    --muted: #698293;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+    background: rgba(255,255,255,0.97);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+}
+
+nav {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    margin-top: -5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.nav-links .nav-btn {
+    background: var(--blue);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 610px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(3,34,57,0.92), rgba(3,57,87,0.58)),
+        url("https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 720px;
+    padding: 100px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #78d8ff;
+}
+
+.hero p {
+    max-width: 590px;
+    font-size: 17px;
+    color: #e1f2fc;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 7px;
+    background: var(--blue);
+    color: white;
+    border: 2px solid var(--blue);
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0668a0;
+    border-color: #0668a0;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: white;
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--dark);
+    border-color: white;
+}
+
+/* TRUST BAR */
+
+.trust-bar {
+    background: var(--dark);
+    color: white;
+    padding: 24px 0;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.trust-item strong {
+    display: block;
+    font-size: 16px;
+}
+
+.trust-item span {
+    font-size: 12px;
+    color: #bdd9e9;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 85px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    color: var(--dark);
+    font-size: clamp(29px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+/* PRODUCTS */
+
+.products {
+    background: #f6fbfe;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e2eef5;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(7,54,83,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-icon {
+    font-size: 25px;
+}
+
+.product-info h3 {
+    color: var(--dark);
+    margin: 8px 0;
+    font-size: 19px;
+}
+
+.product-info p {
+    color: var(--muted);
+    font-size: 14px;
+    min-height: 68px;
+}
+
+.product-link {
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.image-label strong {
+    display: block;
+    color: var(--dark);
+}
+
+.image-label span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.about-text h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    color: var(--dark);
+    margin: 14px 0 20px;
+}
+
+.about-text > p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: flex;
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.feature-icon {
+    min-width: 45px;
+    height: 45px;
+    background: var(--light);
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.feature h4 {
+    color: var(--dark);
+}
+
+.feature p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* INDUSTRIES */
+
+.industries {
+    background: var(--light);
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.industry {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #dceef7;
+}
+
+.industry div {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.industry h3 {
+    font-size: 17px;
+    color: var(--dark);
+}
+
+.industry p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 7px;
+}
+
+/* ORDER SECTION */
+
+.order-section {
+    background: linear-gradient(130deg, #073653, #087fc4);
+    color: white;
+}
+
+.order-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.order-text h2 {
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.2;
+    margin: 14px 0 20px;
+}
+
+.order-text p {
+    color: #d9effb;
+    margin-bottom: 25px;
+}
+
+.order-point {
+    margin: 15px 0;
+    color: #eefaff;
+}
+
+.order-form {
+    background: white;
+    color: var(--text);
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.order-form h3 {
+    color: var(--dark);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-description {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #d8e5ed;
+    border-radius: 7px;
+    outline: none;
+    background: #fbfdff;
+    color: var(--text);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(8,127,196,0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+}
+
+/* CONTACT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.contact-card {
+    padding: 28px;
+    background: #f6fbfe;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e2eef5;
+}
+
+.contact-card div {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    color: var(--dark);
+    margin-bottom: 7px;
+}
+
+.contact-card p {
+    color: var(--muted);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    background: #05283f;
+    color: white;
+    padding: 45px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+footer .logo {
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #bfd4e1;
+    font-size: 14px;
+    max-width: 350px;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    color: #bfd4e1;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.footer-links a:hover {
+    color: #78d8ff;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #bfd4e1;
+}
+
+/* MOBILE */
+
+@media (max-width: 950px) {
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .product-grid, .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .order-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        min-height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 5%;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .nav-links .nav-btn {
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 540px;
+    }
+
+    .hero-content {
+        padding: 75px 0;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 12px 17px;
+        font-size: 13px;
+    }
+
+    .btn-outline {
+        margin: 10px 0 0;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 22px;
+    }
+
+    .product-grid, .industry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-form {
+        padding: 22px 17px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+
+/* POLISHED MOTION & MICRO-INTERACTIONS */
+:root { --ease-out: cubic-bezier(.22,1,.36,1); }
+body { overflow-x: hidden; }
+header { backdrop-filter: blur(14px); transition: box-shadow .3s ease, background .3s ease; }
+.logo { transition: transform .3s var(--ease-out); }
+.logo:hover { transform: translateY(-2px); }
+.nav-links a:not(.nav-btn) { position: relative; }
+.nav-links a:not(.nav-btn)::after {
+    content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px;
+    background: var(--blue); transition: width .28s var(--ease-out);
+}
+.nav-links a:not(.nav-btn):hover::after { width: 100%; }
+.hero { position: relative; isolation: isolate; overflow: hidden; }
+.hero::before {
+    content: ""; position: absolute; inset: -20%; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(circle at 75% 25%, rgba(120,216,255,.22), transparent 24%),
+      radial-gradient(circle at 85% 75%, rgba(255,255,255,.12), transparent 22%);
+    animation: iceDrift 12s ease-in-out infinite alternate;
+}
+.hero::after {
+    content: "✧   ·   ❄   ·   ✧"; position: absolute; right: 7%; top: 18%;
+    color: rgba(255,255,255,.45); font-size: clamp(25px, 4vw, 48px);
+    letter-spacing: 18px; pointer-events: none; animation: snowFloat 7s ease-in-out infinite;
+}
+.hero-content > * { animation: riseIn .8s var(--ease-out) both; }
+.hero-content .badge { animation-delay: .08s; }
+.hero-content h1 { animation-delay: .18s; }
+.hero-content p { animation-delay: .3s; }
+.hero-content .btn { animation-delay: .42s; }
+.badge { backdrop-filter: blur(8px); animation: badgeGlow 3s ease-in-out infinite alternate; }
+.btn { position: relative; overflow: hidden; box-shadow: 0 7px 18px rgba(8,127,196,.15); }
+.btn::after {
+    content: ""; position: absolute; top: -80%; left: -50%; width: 30%; height: 260%;
+    background: rgba(255,255,255,.22); transform: rotate(25deg) translateX(-220%);
+    transition: transform .65s ease;
+}
+.btn:hover::after { transform: rotate(25deg) translateX(650%); }
+.product-card, .industry, .contact-card, .feature-icon, .about-image img {
+    transition: transform .4s var(--ease-out), box-shadow .4s ease, border-color .3s ease;
+}
+.product-card:hover { transform: translateY(-9px) scale(1.012); border-color: #a6dff8; }
+.product-card img { transition: transform .7s var(--ease-out), filter .5s ease; }
+.product-card:hover img { transform: scale(1.06); filter: saturate(1.08); }
+.product-card { box-shadow: 0 5px 20px rgba(7,54,83,.035); }
+.industry:hover, .contact-card:hover { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(7,54,83,.09); }
+.industry div { display: inline-block; transition: transform .35s var(--ease-out); }
+.industry:hover div { transform: translateY(-5px) rotate(-5deg) scale(1.12); }
+.feature:hover .feature-icon { transform: rotate(-5deg) scale(1.07); }
+.order-form { transition: transform .4s var(--ease-out), box-shadow .4s ease; }
+.order-form:focus-within { box-shadow: 0 24px 65px rgba(0,0,0,.22); }
+input, select, textarea { transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
+input:focus, select:focus, textarea:focus { background: #fff; }
+.trust-item { transition: transform .3s var(--ease-out); }
+.trust-item:hover { transform: translateY(-4px); }
+.reveal-ready .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s var(--ease-out), transform .75s var(--ease-out); }
+.reveal-ready .reveal.is-visible { opacity: 1; transform: translateY(0); }
+.product-card.reveal:nth-child(2), .industry.reveal:nth-child(2), .contact-card.reveal:nth-child(2) { transition-delay: .1s; }
+.product-card.reveal:nth-child(3), .industry.reveal:nth-child(3), .contact-card.reveal:nth-child(3) { transition-delay: .2s; }
+.product-card.reveal:nth-child(4), .industry.reveal:nth-child(4) { transition-delay: .3s; }
+@keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes iceDrift { from { transform: translate3d(-1%, -1%, 0) scale(1); } to { transform: translate3d(2%, 2%, 0) scale(1.05); } }
+@keyframes snowFloat { 0%,100% { transform: translateY(0) rotate(0deg); opacity: .5; } 50% { transform: translateY(18px) rotate(8deg); opacity: .9; } }
+@keyframes badgeGlow { from { box-shadow: 0 0 0 rgba(120,216,255,0); } to { box-shadow: 0 0 22px rgba(120,216,255,.13); } }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    .reveal-ready .reveal { opacity: 1; transform: none; }
+}
+
+
+/* Premium 3D ice-inspired motion */
+.hero { perspective: 1100px; }
+.hero-content { transform-style: preserve-3d; }
+.hero-content h1 { text-shadow: 0 7px 28px rgba(0,20,40,.22); }
+.hero-content .badge, .hero-content h1, .hero-content p, .hero-content .btn { will-change: transform; }
+.product-card, .industry, .contact-card, .order-form, .about-image {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.product-card, .industry, .contact-card {
+    position: relative;
+    will-change: transform;
+}
+.product-card::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit;
+    pointer-events: none; opacity: 0;
+    background: linear-gradient(125deg, rgba(255,255,255,.45), transparent 38%, rgba(120,216,255,.13));
+    transition: opacity .35s ease;
+}
+.product-card:hover::after { opacity: 1; }
+.about-image img { box-shadow: 0 24px 55px rgba(7,54,83,.17); }
+.image-label { transform: translateZ(35px); }
+.hero::before {
+    background:
+      radial-gradient(circle at 72% 25%, rgba(120,216,255,.30), transparent 22%),
+      radial-gradient(circle at 88% 72%, rgba(255,255,255,.16), transparent 20%),
+      radial-gradient(circle at 60% 85%, rgba(8,127,196,.22), transparent 24%);
+}
+.ice-orb {
+    position: absolute; z-index: 0; pointer-events: none;
+    width: clamp(35px, 5vw, 70px); aspect-ratio: 1;
+    border: 1px solid rgba(255,255,255,.55);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255,255,255,.36), rgba(120,216,255,.08));
+    box-shadow: inset 0 0 22px rgba(255,255,255,.22), 0 15px 45px rgba(0,20,50,.12);
+    backdrop-filter: blur(3px);
+    transform: rotate(25deg) skew(-4deg);
+    animation: iceCubeFloat 8s ease-in-out infinite;
+}
+.ice-orb.one { right: 13%; top: 24%; }
+.ice-orb.two { right: 30%; bottom: 12%; width: clamp(22px, 3vw, 42px); animation-delay: -2.5s; }
+.ice-orb.three { right: 5%; bottom: 24%; width: clamp(18px, 2vw, 30px); animation-delay: -4s; }
+@keyframes iceCubeFloat {
+    0%,100% { translate: 0 0; rotate: 0deg; }
+    50% { translate: 0 -22px; rotate: 14deg; }
+}
+@media (hover:hover) and (pointer:fine) {
+    .product-card, .industry, .contact-card { transition: transform .45s var(--ease-out), box-shadow .4s ease; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ice-orb { animation: none; }
+}
+
+
+/* Whole-site motion system: subtle, polished, and mobile friendly */
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+header { animation: headerDrop .85s cubic-bezier(.2,.75,.25,1) both; }
+.logo { transition: transform .35s ease, filter .35s ease; }
+.logo:hover { transform: translateY(-2px) scale(1.025); filter: drop-shadow(0 5px 12px rgba(8,127,196,.2)); }
+.nav-links a { position: relative; transition: color .25s ease, transform .25s ease; }
+.nav-links a:not(.nav-btn)::after { content:""; position:absolute; left:0; bottom:-5px; height:2px; width:100%; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform .3s ease; }
+.nav-links a:hover { transform: translateY(-2px); }
+.nav-links a:not(.nav-btn):hover::after { transform:scaleX(1); }
+section { position:relative; isolation:isolate; }
+section:not(.hero)::before { content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.55; background:radial-gradient(ellipse at 8% 12%, rgba(122,216,255,.12), transparent 32%), radial-gradient(ellipse at 95% 85%, rgba(8,127,196,.07), transparent 30%); animation: sectionGlow 13s ease-in-out infinite alternate; }
+.section-heading .eyebrow, .about-text > .eyebrow, .order-text > .eyebrow { display:inline-block; animation: eyebrowFloat 4s ease-in-out infinite; }
+.section-heading h2 { text-wrap:balance; }
+.trust-item { transform-style:preserve-3d; }
+.trust-item > * { transition:transform .35s ease, filter .35s ease; }
+.trust-item:hover > * { transform:translateZ(12px); filter:drop-shadow(0 5px 9px rgba(8,127,196,.12)); }
+.feature { transition:transform .35s ease, background .35s ease, box-shadow .35s ease; border-radius:14px; }
+.feature:hover { transform:translateX(5px); background:rgba(120,216,255,.08); box-shadow:0 10px 25px rgba(8,127,196,.07); }
+.feature-icon { transform-style:preserve-3d; }
+.order-point { transition:transform .3s ease, color .3s ease; }
+.order-point:hover { transform:translateX(6px); color:#9be1ff; }
+.order-form { transform-style:preserve-3d; }
+.form-group { transition:transform .3s ease; }
+.form-group:focus-within { transform:translateY(-2px); }
+.contact-card > div:first-child { display:inline-block; transition:transform .4s cubic-bezier(.2,.8,.2,1); }
+.contact-card:hover > div:first-child { transform:translateY(-5px) rotateY(18deg) scale(1.15); }
+footer { position:relative; overflow:hidden; }
+footer::before { content:""; position:absolute; width:360px; height:360px; border-radius:50%; right:-130px; top:-210px; border:1px solid rgba(255,255,255,.12); box-shadow:0 0 0 35px rgba(255,255,255,.025), 0 0 0 70px rgba(255,255,255,.018); animation:footerFloat 12s ease-in-out infinite alternate; pointer-events:none; }
+.footer-links a { transition:transform .25s ease, opacity .25s ease; }
+.footer-links a:hover { transform:translateX(5px); opacity:.8; }
+.btn, .nav-btn, button { transition:transform .25s ease, box-shadow .25s ease, filter .25s ease; }
+.btn:hover, .nav-btn:hover { transform:translateY(-3px); filter:brightness(1.04); box-shadow:0 14px 28px rgba(8,127,196,.22); }
+.btn:active, .nav-btn:active, button:active { transform:translateY(0) scale(.98); }
+.about-image { perspective:1000px; }
+.about-image img { transform:rotateY(-2deg) rotateX(1deg); }
+.about-image:hover img { transform:rotateY(0) rotateX(0) scale(1.025); }
+.reveal-ready .reveal { will-change:opacity, transform; }
+.reveal-ready .reveal.is-visible { animation: revealSettle .75s cubic-bezier(.2,.75,.25,1) both; }
+@keyframes headerDrop { from { opacity:0; transform:translateY(-18px); } to { opacity:1; transform:translateY(0); } }
+@keyframes sectionGlow { from { transform:scale(1); opacity:.35; } to { transform:scale(1.035); opacity:.75; } }
+@keyframes eyebrowFloat { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-3px); } }
+@keyframes footerFloat { from { transform:translate3d(0,0,0) rotate(0); } to { transform:translate3d(-18px,16px,0) rotate(18deg); } }
+@keyframes revealSettle { 0% { filter:blur(2px); } 100% { filter:blur(0); } }
+@media (max-width: 700px) {
+  .about-image img { transform:none; }
+  .product-card, .industry, .contact-card { transform:none !important; }
+  section:not(.hero)::before { animation-duration:20s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  header, .section-heading .eyebrow, .about-text > .eyebrow, .order-text > .eyebrow,
+  section:not(.hero)::before, footer::before, .reveal-ready .reveal.is-visible { animation:none !important; }
+  .about-image img { transform:none !important; }
+}
+
+
+
+/* PREMIUM FINISH: scroll progress, floating actions, and refined responsive motion */
+:root { --glass: rgba(255,255,255,.82); }
+#scrollProgress { position:fixed; top:0; left:0; width:0; height:3px; z-index:2000; background:linear-gradient(90deg,#78d8ff,#087fc4,#073653); box-shadow:0 0 12px rgba(120,216,255,.65); }
+header { background:rgba(255,255,255,.88); }
+.nav-links .nav-btn { box-shadow:0 8px 20px rgba(8,127,196,.18); transition:transform .25s ease,box-shadow .25s ease,background .25s ease; }
+.nav-links .nav-btn:hover { transform:translateY(-2px); box-shadow:0 12px 25px rgba(8,127,196,.28); }
+.hero { background-attachment:scroll; }
+.hero .container { position:relative; z-index:2; }
+.hero-content { animation:heroDepth .9s cubic-bezier(.2,.75,.25,1) both; }
+.section-heading h2, .about-text h2, .order-text h2 { letter-spacing:-.7px; }
+.product-card, .industry, .contact-card { border-radius:16px; }
+.product-card img { background:#eaf8ff; }
+.order-form { border:1px solid rgba(255,255,255,.65); }
+input:focus,select:focus,textarea:focus { transform:translateY(-1px); }
+#backToTop, #quickWhatsApp { position:fixed; right:22px; z-index:1200; display:grid; place-items:center; width:49px; height:49px; border:0; border-radius:50%; color:#fff; cursor:pointer; box-shadow:0 10px 28px rgba(3,34,57,.22); transition:opacity .25s ease, transform .25s ease, box-shadow .25s ease; }
+#backToTop { bottom:82px; background:var(--dark); opacity:0; pointer-events:none; transform:translateY(10px); font-size:21px; }
+#backToTop.visible { opacity:1; pointer-events:auto; transform:translateY(0); }
+#quickWhatsApp { bottom:22px; background:#20b968; font-size:23px; text-decoration:none; }
+#backToTop:hover, #quickWhatsApp:hover { transform:translateY(-4px) scale(1.04); box-shadow:0 14px 32px rgba(3,34,57,.28); }
+#quickWhatsApp::before { content:'Quick enquiry'; position:absolute; right:58px; white-space:nowrap; background:#073653; color:white; font-size:12px; font-weight:700; padding:7px 10px; border-radius:7px; opacity:0; transform:translateX(5px); transition:.2s ease; pointer-events:none; }
+#quickWhatsApp:hover::before { opacity:1; transform:translateX(0); }
+@keyframes heroDepth { from { opacity:0; transform:translateY(18px) scale(.99); } to { opacity:1; transform:translateY(0) scale(1); } }
+@media(max-width:700px) { #backToTop,#quickWhatsApp { right:15px; width:45px; height:45px; } #backToTop { bottom:73px; } #quickWhatsApp { bottom:16px; } .hero { background-attachment:scroll; } }
+@media(prefers-reduced-motion:reduce) { #backToTop,#quickWhatsApp,#scrollProgress { transition:none; } }
+
+
+/* Business-ready additions */
+:root{--ice-mist:#f3faff;--ice-line:#dcecf5;--ice-shadow:0 18px 50px rgba(7,54,83,.08)}
+.section-heading p{max-width:680px;margin-inline:auto}
+.process-section{background:var(--ice-mist)}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.process-card{background:#fff;border:1px solid var(--ice-line);border-radius:16px;padding:28px;box-shadow:var(--ice-shadow);transition:transform .35s ease,box-shadow .35s ease}
+.process-card:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(7,54,83,.12)}
+.process-number{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#dff5ff,#aee5ff);color:var(--dark);font-weight:900;margin-bottom:18px}
+.process-card h3{color:var(--dark);margin-bottom:8px}
+.process-card p{color:var(--muted);font-size:14px}
+.info-strip{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-top:36px;padding:28px;border-radius:16px;background:#fff;border:1px solid var(--ice-line)}
+.info-strip h3{color:var(--dark);margin-bottom:8px}
+.info-strip p{font-size:14px;color:var(--muted)}
+.faq-section{background:#fff}
+.faq-list{max-width:850px;margin:auto;display:grid;gap:12px}
+.faq-item{border:1px solid var(--ice-line);border-radius:12px;background:#fff;overflow:hidden}
+.faq-item summary{padding:19px 22px;cursor:pointer;list-style:none;font-weight:700;color:var(--dark);display:flex;justify-content:space-between;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--blue);font-size:22px;line-height:1}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{padding:0 22px 20px;color:var(--muted);font-size:14px}
+.contact-note{margin:22px auto 0;max-width:850px;padding:18px 22px;background:var(--ice-mist);border:1px solid var(--ice-line);border-radius:12px;color:var(--muted);font-size:13px}
+.form-hint{font-size:11px;color:var(--muted);margin-top:5px}
+.site-notice{font-size:12px;color:#bfd4e1;margin-top:12px;max-width:540px}
+.contact-card a{display:inline-block;margin-top:7px}
+@media(max-width:800px){.process-grid{grid-template-columns:1fr}.info-strip{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.process-card{transition:none}}
+
+
+/* Premium portal and order management */
+.portal-nav-btn,.footer-admin-btn{border:0;background:transparent;color:var(--blue);font-weight:700;cursor:pointer;font-size:14px}
+.portal-nav-btn{border:1px solid #cce9f8;border-radius:999px;padding:10px 14px;background:#f3fbff}
+.footer-admin-btn{display:block;margin-top:10px;color:#bfeaff;text-align:left}
+.portal-overlay{position:fixed;inset:0;z-index:3000;background:rgba(3,25,42,.72);backdrop-filter:blur(9px);display:none;align-items:center;justify-content:center;padding:18px}
+.portal-overlay.open{display:flex;animation:portalFade .22s ease}
+.portal-shell{width:min(1080px,100%);max-height:92vh;overflow:auto;background:#f5fbff;border-radius:24px;box-shadow:0 30px 100px #001b2c70}
+.portal-top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 26px;background:linear-gradient(120deg,#073653,#087fc4);color:white;position:sticky;top:0;z-index:2}
+.portal-top h2{font-size:22px}.portal-top p{font-size:12px;color:#d5f0ff}
+.portal-close{width:40px;height:40px;border:1px solid #ffffff55;border-radius:50%;background:#ffffff15;color:white;font-size:24px;cursor:pointer}
+.portal-body{padding:24px}.portal-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.portal-tabs button,.portal-btn{border:0;border-radius:10px;padding:11px 15px;background:#e0f2fc;color:#075078;font-weight:700;cursor:pointer}
+.portal-tabs button.active,.portal-btn.primary{background:#087fc4;color:#fff}
+.portal-panel{display:none}.portal-panel.active{display:block;animation:portalFade .2s ease}
+.portal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:20px}
+.portal-stat,.portal-card{background:white;border:1px solid #dcecf5;border-radius:16px;padding:18px;box-shadow:0 6px 22px #0a4c6a08}
+.portal-stat small{display:block;color:#6a8292;font-weight:600}.portal-stat strong{display:block;font-size:26px;color:#073653;margin-top:5px;overflow-wrap:anywhere}
+.portal-card h3{margin-bottom:12px;color:#073653}.portal-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.portal-form label{font-size:12px;font-weight:700;color:#476577;display:block;margin-bottom:5px}.portal-form input,.portal-form select{width:100%;padding:12px;border:1px solid #cfe1eb;border-radius:10px;background:white;outline-color:#087fc4}.portal-form .wide{grid-column:1/-1}
+.portal-note{background:#fff7df;border:1px solid #f3df9e;color:#735a16;padding:12px 14px;border-radius:12px;font-size:12px;margin-bottom:18px}
+.portal-table-wrap{overflow:auto;background:white;border:1px solid #dcecf5;border-radius:14px}.portal-table{width:100%;border-collapse:collapse;min-width:680px;font-size:13px}.portal-table th,.portal-table td{padding:12px;text-align:left;border-bottom:1px solid #e8f1f6;vertical-align:top}.portal-table th{background:#eef8fd;color:#30566b}.portal-table select{padding:7px;border:1px solid #cfe1eb;border-radius:8px;max-width:150px}.portal-empty{text-align:center;color:#6a8292;padding:25px}.portal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.portal-small{font-size:12px;color:#6a8292;margin-top:10px}.portal-result{margin-top:14px}
+@keyframes portalFade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.portal-grid{grid-template-columns:1fr}.portal-form{grid-template-columns:1fr}.portal-form .wide{grid-column:auto}.portal-body{padding:16px}.portal-top{padding:17px}.portal-top h2{font-size:18px}.portal-nav-btn{width:100%;text-align:left;background:white;border:0;padding:12px 0}}
+@media(prefers-reduced-motion:reduce){.portal-overlay.open,.portal-panel.active{animation:none}}
+
+
+
+/* CRYSTAL ICE PREMIUM HERO + 3D GLASS CUBES */
+.hero { min-height:680px; background-image:linear-gradient(90deg,rgba(2,25,43,.94) 0%,rgba(3,43,67,.82) 48%,rgba(3,57,87,.42) 100%),url("https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=2000&q=90"); }
+.hero .container { display:flex; align-items:center; justify-content:space-between; gap:25px; }
+.hero-content { position:relative; z-index:4; flex:1 1 58%; max-width:700px; }
+.hero-showcase { position:relative; flex:0 1 42%; min-width:290px; height:430px; display:grid; place-items:center; perspective:1000px; isolation:isolate; }
+.hero-showcase::before { content:""; position:absolute; width:min(95%,390px); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle,rgba(105,218,255,.32),rgba(34,153,210,.12) 42%,transparent 70%); filter:blur(8px); animation:showcasePulse 5s ease-in-out infinite alternate; }
+.ice-glass-panel { position:absolute; inset:50px 12px; border:1px solid rgba(255,255,255,.32); border-radius:28px; background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(139,221,255,.04)); backdrop-filter:blur(9px); box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 35px 80px rgba(0,12,30,.2); transform:rotateY(-9deg) rotateX(3deg); }
+.ice-glass-panel::before,.ice-glass-panel::after { content:""; position:absolute; border-radius:50%; border:1px solid rgba(255,255,255,.17); }
+.ice-glass-panel::before { width:250px;height:250px;right:-75px;top:-65px; }
+.ice-glass-panel::after { width:180px;height:180px;left:-55px;bottom:-50px; }
+.ice-cube-3d { --cube-size:112px; position:absolute; width:var(--cube-size); height:var(--cube-size); transform-style:preserve-3d; animation:cubeDrift 8s ease-in-out infinite; filter:drop-shadow(0 22px 22px rgba(0,20,40,.22)); }
+.ice-cube-3d .face { position:absolute; inset:0; border:1px solid rgba(255,255,255,.82); background:linear-gradient(135deg,rgba(255,255,255,.54),rgba(115,215,255,.13) 48%,rgba(255,255,255,.25)); box-shadow:inset 0 0 23px rgba(255,255,255,.3); backdrop-filter:blur(1.5px); }
+.ice-cube-3d .front { transform:translateZ(calc(var(--cube-size)/2)); }
+.ice-cube-3d .back { transform:rotateY(180deg) translateZ(calc(var(--cube-size)/2)); }
+.ice-cube-3d .right { transform:rotateY(90deg) translateZ(calc(var(--cube-size)/2)); background:linear-gradient(135deg,rgba(151,232,255,.4),rgba(255,255,255,.14)); }
+.ice-cube-3d .left { transform:rotateY(-90deg) translateZ(calc(var(--cube-size)/2)); }
+.ice-cube-3d .top { transform:rotateX(90deg) translateZ(calc(var(--cube-size)/2)); background:linear-gradient(135deg,rgba(255,255,255,.75),rgba(125,218,255,.22)); }
+.ice-cube-3d .bottom { transform:rotateX(-90deg) translateZ(calc(var(--cube-size)/2)); }
+.cube-main { --cube-size:126px; left:30%; top:28%; animation-delay:-1.5s; }
+.cube-small { --cube-size:65px; right:12%; top:20%; animation-duration:7s; animation-delay:-3s; }
+.cube-lower { --cube-size:82px; left:14%; bottom:17%; animation-duration:9s; animation-delay:-4.5s; }
+.cube-mid { --cube-size:43px; right:22%; bottom:17%; animation-duration:6.5s; animation-delay:-2s; }
+.showcase-caption { position:absolute; z-index:3; left:28px; bottom:70px; right:28px; padding:16px 18px; border:1px solid rgba(255,255,255,.3); border-radius:15px; background:rgba(4,39,61,.58); backdrop-filter:blur(14px); box-shadow:0 15px 35px rgba(0,0,0,.13); }
+.showcase-caption strong { display:block; font-size:15px; color:#fff; letter-spacing:.2px; }
+.showcase-caption span { color:#c9edff; font-size:12px; }
+.hero .badge { border-color:rgba(153,227,255,.45); background:rgba(11,100,145,.25); }
+.hero h1 span { background:linear-gradient(100deg,#b9f0ff,#58caff 52%,#fff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.hero .btn { box-shadow:0 12px 28px rgba(0,143,214,.24); }
+@keyframes cubeDrift { 0%,100% { transform:translate3d(0,0,0) rotateX(-12deg) rotateY(22deg) rotateZ(-4deg); } 50% { transform:translate3d(0,-19px,12px) rotateX(8deg) rotateY(48deg) rotateZ(4deg); } }
+@keyframes showcasePulse { from { transform:scale(.9);opacity:.55; } to { transform:scale(1.08);opacity:1; } }
+@media(max-width:900px) { .hero .container { gap:0; } .hero-showcase { flex-basis:36%; min-width:220px; height:360px; } .ice-glass-panel { inset:55px 0; } .cube-main { --cube-size:90px; left:28%; } .cube-small { --cube-size:48px; } .cube-lower { --cube-size:60px; } .showcase-caption { left:10px;right:10px;bottom:65px;padding:12px; } .showcase-caption strong {font-size:12px;} .showcase-caption span {font-size:10px;} }
+@media(max-width:700px) { .hero { min-height:0; } .hero .container { display:block; } .hero-content { padding:78px 0 20px; } .hero-showcase { min-width:0; width:100%; height:290px; margin:0 auto 35px; } .ice-glass-panel { inset:20px 12%; } .cube-main { --cube-size:82px; left:39%; top:22%; } .cube-small { --cube-size:46px; right:22%; top:13%; } .cube-lower { --cube-size:58px; left:25%; bottom:14%; } .cube-mid { --cube-size:36px; right:29%; bottom:12%; } .showcase-caption { left:18%;right:18%;bottom:26px;text-align:center; } .hero::after { top:12%;right:5%;font-size:22px;letter-spacing:8px; } }
+@media(prefers-reduced-motion:reduce) { .ice-cube-3d,.hero-showcase::before { animation:none!important; } }
+
+
+/* ===== PREMIUM THEME (overrides) ===== */
+:root{--blue:#0a7fc2;--blue2:#16a5e6;--dark:#06263f;--ink:#041a2c;--light:#f2faff;--text:#2b4355;--muted:#64808f;--ice:#78d8ff;--ring:0 10px 40px -12px rgba(6,38,63,.25)}
+*{font-family:"Plus Jakarta Sans",-apple-system,"Segoe UI",Arial,sans-serif}
+body{-webkit-font-smoothing:antialiased;background:#fff}
+h1,h2,h3{letter-spacing:-.02em}
+header{background:rgba(255,255,255,.82)!important;backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);box-shadow:0 1px 0 rgba(6,38,63,.07)!important}
+nav{min-height:72px}
+.logo{letter-spacing:.01em}
+.nav-links a:not(.nav-btn){position:relative;color:var(--dark)}
+.nav-links a:not(.nav-btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--blue2);transition:.3s}
+.nav-links a:not(.nav-btn):hover::after{width:100%}
+.nav-links .nav-btn,.btn{background:linear-gradient(135deg,var(--blue2),var(--blue))!important;border:0!important;border-radius:999px!important;box-shadow:0 10px 24px -8px rgba(10,127,194,.55);transition:transform .3s,box-shadow .3s}
+.nav-links .nav-btn:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(10,127,194,.7)}
+.btn-outline{background:transparent!important;border:2px solid rgba(255,255,255,.7)!important;box-shadow:none}
+/* sections */
+section{scroll-margin-top:72px}
+.eyebrow{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(22,165,230,.1);color:var(--blue)!important;font-size:12px!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.section-heading h2,.about-text h2{font-size:clamp(28px,4vw,44px);color:var(--dark);line-height:1.15}
+.section-heading p{color:var(--muted)}
+.trust-bar{background:var(--ink)!important;border:0!important}
+.trust-item{color:#fff!important}.trust-item span{color:#9fc4d8!important}
+.product-card,.industry,.process-card,.contact-card,.faq-item{border-radius:20px!important;border:1px solid rgba(6,38,63,.08)!important;box-shadow:var(--ring)!important;transition:transform .35s,box-shadow .35s}
+.product-card:hover,.industry:hover,.process-card:hover,.contact-card:hover{transform:translateY(-8px);box-shadow:0 28px 50px -18px rgba(6,38,63,.35)!important}
+.product-card img{transition:transform .8s}.product-card:hover img{transform:scale(1.06)}
+.about-image img{border-radius:24px;box-shadow:0 30px 60px -25px rgba(6,38,63,.5)}
+.order-section{background:radial-gradient(1200px 500px at 85% 0,rgba(22,165,230,.28),transparent 60%),linear-gradient(160deg,var(--ink),#0a3d62)!important}
+.order-form{border-radius:24px!important;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)!important}
+.order-form input,.order-form select,.order-form textarea{border-radius:12px!important;transition:box-shadow .2s,border-color .2s}
+.order-form input:focus,.order-form select:focus,.order-form textarea:focus{outline:0;border-color:var(--blue2)!important;box-shadow:0 0 0 4px rgba(22,165,230,.18)}
+footer{background:var(--ink)!important}
+.reveal-up{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.reveal-up.in{opacity:1;transform:none}
+
+/* ===== HERO ===== */
+.hero.hx{position:relative;overflow:hidden;min-height:calc(100vh - 72px);min-height:calc(100svh - 72px);padding:70px 0 90px;display:flex;align-items:center;color:#fff;
+ background:linear-gradient(115deg,rgba(3,22,38,.96) 0%,rgba(5,45,72,.9) 55%,rgba(6,70,104,.82) 100%),url("https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat,#05253b}
+.hx-bg{position:absolute;inset:0;pointer-events:none}
+.hx-aurora{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;animation:hxDrift 14s ease-in-out infinite alternate}
+.hx-aurora.a1{width:520px;height:520px;background:#16a5e6;right:-120px;top:-140px}
+.hx-aurora.a2{width:420px;height:420px;background:#4fd1ff;left:-140px;bottom:-160px;opacity:.28;animation-duration:18s}
+@keyframes hxDrift{to{transform:translate(-50px,40px) scale(1.15)}}
+.hx-snow i{position:absolute;top:-12px;border-radius:50%;background:#fff;opacity:.7;animation:hxFall linear infinite}
+@keyframes hxFall{to{transform:translate3d(var(--x,20px),110vh,0)}}
+.hx-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.hx-copy{max-width:640px}
+.hx-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#d5f1ff;margin-bottom:26px}
+.hx-badge b{width:8px;height:8px;border-radius:50%;background:var(--ice);box-shadow:0 0 0 0 rgba(120,216,255,.7);animation:hxPulse 2s infinite}
+@keyframes hxPulse{70%{box-shadow:0 0 0 10px rgba(120,216,255,0)}100%{box-shadow:0 0 0 0 rgba(120,216,255,0)}}
+.hero.hx h1{font-size:clamp(40px,6.2vw,76px);line-height:1.04;font-weight:800;margin-bottom:24px;letter-spacing:-.035em}
+.hero.hx h1 span{background:linear-gradient(90deg,#fff,#78d8ff 60%,#16a5e6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero.hx p{font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#cfe8f6;max-width:560px;margin-bottom:34px}
+.hx-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.hx-cta .btn{padding:16px 30px;font-size:15px}
+.hx-primary span{display:inline-block;transition:transform .3s}.hx-primary:hover span{transform:translateX(5px)}
+.hx-ghost{backdrop-filter:blur(8px)}.hx-ghost:hover{background:rgba(255,255,255,.12)!important}
+.hx-chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13.5px;font-weight:600;color:#bfe3f5}
+.hx-visual{position:relative;filter:drop-shadow(0 40px 60px rgba(0,0,0,.45));animation:hxFloat 7s ease-in-out infinite}
+.hx-visual svg{width:100%;height:auto;display:block;overflow:visible}
+@keyframes hxFloat{50%{transform:translateY(-12px)}}
+.hx-in{opacity:0;transform:translateY(26px);animation:hxIn .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+@keyframes hxIn{to{opacity:1;transform:none}}
+.hx-visual.hx-in{animation:hxIn .9s cubic-bezier(.2,.7,.2,1) var(--d) forwards,hxFloat 7s ease-in-out 1.4s infinite}
+/* svg animation */
+.vp{opacity:0;animation:hxVapor 4.5s ease-out infinite}.v2{animation-delay:2.2s}.v3{animation-delay:1s}.v4{animation-delay:3.2s}
+@keyframes hxVapor{0%{opacity:0;transform:translate(0,0) scale(.5)}20%{opacity:.5}100%{opacity:0;transform:translate(14px,-70px) scale(2.1)}}
+.cb{animation:hxBelt 9s linear infinite}
+.c2{animation-delay:-1.8s}.c3{animation-delay:-3.6s}.c4{animation-delay:-5.4s}.c5{animation-delay:-7.2s}
+@keyframes hxBelt{from{transform:translateX(60px)}to{transform:translateX(440px)}}
+.fl{animation:hxBob 5s ease-in-out infinite}.f2{animation-delay:-1.5s}.f3{animation-delay:-3s}
+@keyframes hxBob{50%{transform:translateY(-10px) rotate(6deg)}}
+.hx-scroll{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);width:26px;height:42px;border:2px solid rgba(255,255,255,.45);border-radius:20px;z-index:3}
+.hx-scroll i{position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:hxScroll 1.8s infinite}
+@keyframes hxScroll{to{transform:translateY(16px);opacity:0}}
+@media(max-width:900px){
+ .hero.hx{padding:48px 0 80px;min-height:0}
+ .hx-grid{grid-template-columns:1fr;gap:34px}
+ .hx-visual{max-width:480px;margin:0 auto}
+ .hx-scroll{display:none}
+}
+@media(prefers-reduced-motion:reduce){.hx-in,.hx-visual,.vp,.cb,.fl,.hx-aurora,.hx-snow i,.hx-badge b{animation:none!important;opacity:1;transform:none}.cb{transform:translateX(120px)}.vp{opacity:0}.reveal-up{opacity:1;transform:none}}
+</style>
+</head>
+
+<body>
+<div id="scrollProgress" aria-hidden="true"></div>
+
+<div id="website">
+<header>
+    <div class="container">
+        <nav>
+            <a href="#home" class="logo">
+                ❄ CRYSTAL<span>ICE</span>
+                <small>ICE MANUFACTURING & SUPPLY</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">☰</button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#products">Our Products</a>
+                <a href="#about">About Us</a>
+                <a href="#industries">Industries</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQs</a>
+                <a href="#contact">Contact</a>
+                <button type="button" class="portal-nav-btn" data-open-portal>Customer Portal</button>
+                <a href="#order" class="nav-btn">Place an Order ↗</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero hx" id="home">
+    <div class="hx-bg" aria-hidden="true"><i class="hx-aurora a1"></i><i class="hx-aurora a2"></i><div class="hx-snow" id="hxSnow"></div></div>
+    <div class="container hx-grid">
+        <div class="hx-copy">
+            <span class="hx-badge hx-in" style="--d:.05s"><b></b> Ice Manufacturing &amp; Supply</span>
+            <h1 class="hx-in" style="--d:.15s">Premium Ice,<br><span>Made for Business.</span></h1>
+            <p class="hx-in" style="--d:.28s">Crystal Ice produces and supplies cubes, block, crushed and bulk ice for hotels, restaurants, events and commercial cooling, with clear communication from first enquiry to delivery.</p>
+            <div class="hx-cta hx-in" style="--d:.4s">
+                <a href="#order" class="btn hx-primary">Request an Order <span>→</span></a>
+                <a href="#products" class="btn btn-outline hx-ghost">Explore Products</a>
+            </div>
+            <ul class="hx-chips hx-in" style="--d:.52s">
+                <li>✔ Quality-focused production</li>
+                <li>✔ Bulk &amp; recurring supply</li>
+                <li>✔ Easy WhatsApp ordering</li>
+            </ul>
+        </div>
+        <div class="hx-visual hx-in" style="--d:.3s" aria-label="Illustration of an ice factory producing ice cubes">
+            <svg viewBox="0 0 520 460" role="img" aria-hidden="true">
+                <defs>
+                    <linearGradient id="gCard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#7fd8ff" stop-opacity=".04"/></linearGradient>
+                    <linearGradient id="gBld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d6a99"/><stop offset="1" stop-color="#0b3d5e"/></linearGradient>
+                    <linearGradient id="gCube" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#bfeaff"/><stop offset="1" stop-color="#5cc3f2"/></linearGradient>
+                    <radialGradient id="gGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#78d8ff" stop-opacity=".55"/><stop offset="1" stop-color="#78d8ff" stop-opacity="0"/></radialGradient>
+                    <g id="cube"><rect width="38" height="38" rx="7" fill="url(#gCube)" stroke="#fff" stroke-opacity=".8"/><path d="M7 9h14M7 9v11" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85"/></g>
+                </defs>
+                <rect x="6" y="6" width="508" height="448" rx="30" fill="url(#gCard)" stroke="#fff" stroke-opacity=".22"/>
+                <circle cx="270" cy="230" r="210" fill="url(#gGlow)"/>
+                <!-- vapor -->
+                <g fill="#fff"><circle class="vp v1" cx="148" cy="96" r="13"/><circle class="vp v2" cx="148" cy="96" r="13"/><circle class="vp v3" cx="224" cy="96" r="11"/><circle class="vp v4" cx="224" cy="96" r="11"/></g>
+                <!-- factory -->
+                <rect x="132" y="104" width="32" height="92" rx="4" fill="#0d4a72"/><rect x="132" y="104" width="32" height="10" rx="3" fill="#2b88bd"/>
+                <rect x="208" y="112" width="32" height="84" rx="4" fill="#0d4a72"/><rect x="208" y="112" width="32" height="10" rx="3" fill="#2b88bd"/>
+                <path d="M70 280V196l70 34V196l70 34V196l70 34V196l70 34V196l60 28v56z" fill="url(#gBld)"/>
+                <rect x="70" y="262" width="360" height="22" fill="#08324f"/>
+                <g fill="#9be1ff"><rect x="96" y="238" width="30" height="16" rx="3" opacity=".9"/><rect x="146" y="238" width="30" height="16" rx="3" opacity=".6"/><rect x="196" y="238" width="30" height="16" rx="3" opacity=".9"/><rect x="246" y="238" width="30" height="16" rx="3" opacity=".6"/></g>
+                <rect x="332" y="232" width="62" height="48" rx="4" fill="#062a43"/><path d="M332 244h62M332 256h62M332 268h62" stroke="#2b88bd" stroke-width="2"/>
+                <!-- chute -->
+                <path d="M404 262l26 20h-52z" fill="#2b88bd"/>
+                <!-- conveyor -->
+                <rect x="40" y="318" width="440" height="16" rx="8" fill="#0a3454" stroke="#7fd8ff" stroke-opacity=".5"/>
+                <g fill="#7fd8ff" opacity=".7"><circle cx="64" cy="326" r="4"/><circle cx="460" cy="326" r="4"/></g>
+                <g class="belt">
+                    <use href="#cube" class="cb c1" x="0" y="280"/><use href="#cube" class="cb c2" x="0" y="280"/><use href="#cube" class="cb c3" x="0" y="280"/><use href="#cube" class="cb c4" x="0" y="280"/><use href="#cube" class="cb c5" x="0" y="280"/>
+                </g>
+                <rect x="40" y="338" width="440" height="6" rx="3" fill="#7fd8ff" opacity=".12"/>
+                <!-- floating cubes -->
+                <use href="#cube" class="fl f1" x="400" y="70"/><use href="#cube" class="fl f2" x="52" y="130" transform="scale(.7)"/><use href="#cube" class="fl f3" x="420" y="150" transform="scale(.55)"/>
+                <!-- caption -->
+                <text x="40" y="392" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans, Arial, sans-serif">Pure. Clear. Dependable.</text>
+                <text x="40" y="416" fill="#bfe6f8" font-size="13.5" font-family="Plus Jakarta Sans, Arial, sans-serif">From production line to your doorstep, subject to service area.</text>
+            </svg>
+        </div>
+    </div>
+    <a href="#products" class="hx-scroll" aria-label="Scroll to products"><i></i></a>
+</section>
+
+<!-- TRUST BAR -->
+
+<div class="trust-bar">
+    <div class="container trust-grid">
+        <div class="trust-item">
+            <strong>❄ Quality Focused</strong>
+            <span>Carefully managed production</span>
+        </div>
+        <div class="trust-item">
+            <strong>🏭 Bulk Supply</strong>
+            <span>Orders for businesses</span>
+        </div>
+        <div class="trust-item">
+            <strong>🚚 Delivery Support</strong>
+            <span>Subject to service area</span>
+        </div>
+        <div class="trust-item">
+            <strong>🤝 Customer First</strong>
+            <span>Dependable service</span>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="eyebrow">Our Ice Products</span>
+            <h2>The Right Ice for Every Need</h2>
+            <p>
+                Choose a product and share your expected quantity. We will confirm suitable options, current availability and delivery feasibility for your location.
+            </p>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=700&q=80"
+                    alt="Ice cubes"
+                    loading="lazy">
+                <div class="product-info">
+                    <div class="product-icon">🧊</div>
+                    <h3>Ice Cubes</h3>
+                    <p>
+                        Convenient ice supply for beverages,
+                        restaurants, cafes and events.
+                    </p>
+                    <a href="#order" class="product-link"
+                       data-product="Ice Cubes">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0821/6150/0505/files/glacons_transparent.webp?v=1775038432"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=700&q=80'"
+                    alt="Clear ice blocks and cubes"
+                    loading="lazy">
+                <div class="product-info">
+                    <div class="product-icon">❄️</div>
+                    <h3>Block Ice</h3>
+                    <p>
+                        Large ice blocks for suitable commercial,
+                        cooling and storage applications.
+                    </p>
+                    <a href="#order" class="product-link"
+                       data-product="Block Ice">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.pexels.com/photos/12275698/pexels-photo-12275698.jpeg?auto=compress&cs=tinysrgb&w=700"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=700&q=80'"
+                    alt="Crushed ice for cooling"
+                    loading="lazy">
+                <div class="product-info">
+                    <div class="product-icon">🌨️</div>
+                    <h3>Crushed Ice</h3>
+                    <p>
+                        Crushed ice for cooling displays, beverages,
+                        events and other suitable uses.
+                    </p>
+                    <a href="#order" class="product-link"
+                       data-product="Crushed Ice">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=700&q=80"
+                    alt="Bulk ice supply"
+                    loading="lazy">
+                <div class="product-info">
+                    <div class="product-icon">🚚</div>
+                    <h3>Bulk Ice Supply</h3>
+                    <p>
+                        Supply arrangements for businesses with
+                        regular or high-volume ice requirements.
+                    </p>
+                    <a href="#order" class="product-link"
+                       data-product="Bulk Ice Supply">Enquire Now →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85"
+                alt="Industrial production environment"
+                loading="lazy">
+
+            <div class="image-label">
+                <strong>Built Around Quality & Reliability</strong>
+                <span>Ice supply solutions for commercial customers</span>
+            </div>
+        </div>
+
+        <div class="about-text">
+            <span class="eyebrow">About Crystal Ice</span>
+
+            <h2>Your Trusted Partner in Ice Manufacturing</h2>
+
+            <p>
+                Crystal Ice is presented as a customer-focused ice
+                manufacturing and supply business committed to
+                dependable service, consistent product quality and
+                practical solutions for commercial ice requirements.
+            </p>
+
+            <p>
+                From individual business orders to bulk supply
+                enquiries, we aim to make sourcing ice straightforward
+                and convenient.
+            </p>
+
+            <div class="feature">
+                <div class="feature-icon">🧊</div>
+                <div>
+                    <h4>Quality-Focused Production</h4>
+                    <p>
+                        Appropriate production, handling and storage
+                        practices for the intended application.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <div>
+                    <h4>Flexible Order Quantities</h4>
+                    <p>
+                        Discuss your product, quantity, schedule
+                        and supply requirements with our team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🚛</div>
+                <div><h4>Supply Coordination</h4><p>Delivery arrangements based on your location and order availability.</p></div>
+            </div>
+
+            <a href="#contact" class="btn">Contact Our Team</a>
+        </div>
+    </div>
+</section>
+
+<section class="industries" id="industries">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">Who We Serve</span>
+            <h2>Ice Solutions for Every Industry</h2>
+            <p>Supporting different business requirements with suitable ice products and supply arrangements.</p>
+        </div>
+
+        <div class="industry-grid">
+            <div class="industry"><div>🏨</div><h3>Hotels & Resorts</h3><p>Ice supply for hospitality and guest services.</p></div>
+            <div class="industry"><div>🍽️</div><h3>Restaurants & Cafes</h3><p>Ice for beverage service and cooling uses.</p></div>
+            <div class="industry"><div>🎉</div><h3>Events & Catering</h3><p>Order planning for functions and gatherings.</p></div>
+            <div class="industry"><div>🏪</div><h3>Shops & Businesses</h3><p>Supply enquiries for retail and commercial needs.</p></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="process-section" id="how-it-works">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">Simple & Straightforward</span>
+            <h2>How Ordering Works</h2>
+            <p>Clear communication from your first enquiry to delivery coordination. Every order is confirmed based on product availability and location.</p>
+        </div>
+        <div class="process-grid">
+            <article class="process-card reveal"><div class="process-number">01</div><h3>Tell Us What You Need</h3><p>Select the ice type, estimated quantity, delivery location and whether you need a one-time or recurring supply.</p></article>
+            <article class="process-card reveal"><div class="process-number">02</div><h3>Confirm Price & Availability</h3><p>Our team can review your requirements and discuss pricing, order minimums, timing and delivery feasibility before you commit.</p></article>
+            <article class="process-card reveal"><div class="process-number">03</div><h3>Coordinate Your Order</h3><p>Once the details are agreed, confirm the order and delivery window directly with the team.</p></article>
+        </div>
+        <div class="info-strip">
+            <div><h3>Planning a regular supply?</h3><p>Share your typical daily or weekly quantity and preferred schedule so we can discuss a suitable arrangement.</p></div>
+            <div><h3>Need a one-time event order?</h3><p>Include your event date, approximate quantity and venue area in the enquiry. Advance notice helps with planning.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">Helpful Information</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Useful details to prepare before requesting an ice supply quote.</p>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item"><summary>Which ice products can I enquire about?</summary><p>You can enquire about ice cubes, block ice, crushed ice or bulk supply. Please describe your intended use so the team can confirm the suitable product and availability.</p></details>
+            <details class="faq-item"><summary>How is pricing decided?</summary><p>Pricing can depend on ice type, quantity, order frequency, packaging and delivery location. Submit an enquiry for a quote; no fixed price is advertised on this website.</p></details>
+            <details class="faq-item"><summary>Do you deliver to my area?</summary><p>Delivery coverage and timing must be confirmed for each location. Include your area or PIN code in the order form to help check feasibility.</p></details>
+            <details class="faq-item"><summary>Can I arrange recurring business supply?</summary><p>Yes, you can ask about a recurring arrangement. Include your estimated daily or weekly requirement and preferred delivery schedule so the team can review it.</p></details>
+            <details class="faq-item"><summary>Is my order confirmed when I submit this form?</summary><p>No. The form prepares an enquiry in WhatsApp for you to review and send. Your order is not confirmed until the business replies and you agree on price, availability and delivery details.</p></details>
+            <details class="faq-item"><summary>What information should I provide?</summary><p>Your name, contact number, product, estimated quantity and delivery location are the essentials. A requested date, business name and any handling or packaging requirements can also help.</p></details>
+        </div>
+        <div class="contact-note"><strong>Transparency note:</strong> Product availability, pricing, food-use suitability, delivery areas and timings should be confirmed directly before placing an order. Replace this note with your verified company policies and certifications when available.</div>
+    </div>
+</section>
+
+<section class="order-section" id="order">
+    <div class="container order-layout">
+        <div class="order-text">
+            <span class="eyebrow" style="color:#9be1ff">Order & Enquiries</span>
+            <h2>Need Ice for Your Business?</h2>
+            <p>Tell us what you need. Share your product, approximate quantity and delivery location to enquire about pricing and availability.</p>
+            <div class="order-point">✓ Product and quantity enquiries</div>
+            <div class="order-point">✓ Bulk and recurring supply requests</div>
+            <div class="order-point">✓ Delivery availability enquiries</div>
+            <div class="order-point">✓ Pricing based on your requirements</div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+            <h3>Request an Order</h3>
+            <p class="form-description">Complete the form to prepare your enquiry on WhatsApp.</p>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessName">Business Name</label>
+                    <input type="text" id="businessName" placeholder="Your company or shop">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Your phone number" required pattern="[0-9+\s()-]{10,16}">
+                </div>
+
+                <div class="form-group">
+                    <label for="product">Select Ice Product *</label>
+                    <select id="product" required>
+                        <option value="">Choose a product</option>
+                        <option>Ice Cubes</option>
+                        <option>Block Ice</option>
+                        <option>Crushed Ice</option>
+                        <option>Bulk Ice Supply</option>
+                        <option>Other / Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Required Quantity *</label>
+                    <input type="text" id="quantity" placeholder="e.g. 100 kg per day" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="delivery">Delivery Location *</label>
+                    <input type="text" id="delivery" placeholder="City / area / PIN code" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderDate">Preferred Date</label>
+                    <input type="date" id="orderDate">
+                    <div class="form-hint">Subject to confirmation.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="frequency">Supply Frequency</label>
+                    <select id="frequency">
+                        <option value="One-time order">One-time order</option>
+                        <option value="Daily supply">Daily supply</option>
+                        <option value="Weekly supply">Weekly supply</option>
+                        <option value="Monthly / planned supply">Monthly / planned supply</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label for="message">Additional Requirements</label>
+                    <textarea id="message" placeholder="Tell us about your order, preferred date or regular supply needs"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Send Enquiry on WhatsApp ↗</button>
+            <p style="font-size:11px;color:#698293;margin-top:12px">A local enquiry reference is saved in this browser, then WhatsApp opens for you to review and send. This demo does not send the enquiry automatically.</p>
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">Get In Touch</span>
+            <h2>Let's Talk About Your Ice Requirements</h2>
+            <p>Contact us for product availability, bulk quantities, pricing and delivery enquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card"><div>📞</div><h3>Phone & Callback</h3><p>Send your contact details and preferred callback time through an enquiry.</p><a href="#order">Request a Callback</a></div>
+            <div class="contact-card"><div>📍</div><h3>Delivery Coverage</h3><p>Share your area or PIN code and ask us to confirm service availability.</p><a href="#order">Check Delivery Availability</a></div>
+            <div class="contact-card"><div>💬</div><h3>WhatsApp</h3><p>Discuss product options, quantities, pricing and delivery arrangements.</p><a href="https://wa.me/918554013478?text=Hello%20Crystal%20Ice%2C%20I%20would%20like%20to%20enquire%20about%20ice%20supply." target="_blank" rel="noopener">Message Crystal Ice ↗</a></div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a href="#home" class="logo">❄ CRYSTAL<span>ICE</span></a>
+                <p>Ice manufacturing and supply solutions for businesses, hospitality, events and commercial cooling requirements.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#products">Our Products</a>
+                <a href="#about">About Us</a>
+                <a href="#industries">Industries We Serve</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQs</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Customer Support</h4>
+                <a href="#order">Request an Order</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#order">Bulk Supply Enquiry</a>
+                <button type="button" class="footer-admin-btn" data-open-portal>Customer / Admin Portal</button>
+            </div>
+        </div>
+
+        <p class="site-notice">Website information is for enquiry purposes. Orders, pricing, delivery schedules and product suitability require direct confirmation. Add your registered business details, verified address and applicable policies before publishing.</p>
+        <div class="copyright">© <span class="currentYear"></span> Crystal Ice. All rights reserved.</div>
+    </div>
+</footer>
+
+</div>
+
+
+<div class="portal-overlay" id="portalOverlay" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
+  <div class="portal-shell">
+    <div class="portal-top"><div><h2 id="portalTitle">❄ Crystal Ice Portal</h2><p>Customer enquiries · Order history · Business workspace</p></div><button class="portal-close" id="portalClose" aria-label="Close portal">×</button></div>
+    <div class="portal-body">
+      <div class="portal-note"><strong>Prototype mode:</strong> this single-file website stores records only in this browser using local storage. It is not secure multi-user authentication and does not sync across devices. A live business portal needs a backend, database, verified login and server-side access controls.</div>
+      <div class="portal-tabs" role="tablist"><button class="active" data-portal-tab="customerPanel">Customer Portal</button><button data-portal-tab="adminPanel">Admin Dashboard</button><button data-portal-tab="settingsPanel">Business Settings</button></div>
+      <section class="portal-panel active" id="customerPanel">
+        <div class="portal-card"><h3>Find Your Enquiries</h3><p class="portal-small" style="margin:0 0 12px">Enter the phone number you used on this browser to view locally saved enquiries.</p><div class="portal-form"><div><label for="lookupPhone">Customer phone number</label><input id="lookupPhone" type="tel" placeholder="Enter phone number"></div><div style="align-self:end"><button class="portal-btn primary" id="lookupOrders" type="button">View My Orders</button></div></div><div id="customerOrders" class="portal-result"></div></div>
+      </section>
+      <section class="portal-panel" id="adminPanel">
+        <div class="portal-grid"><div class="portal-stat"><small>Total Enquiries</small><strong id="statTotal">0</strong></div><div class="portal-stat"><small>Pending Review</small><strong id="statPending">0</strong></div><div class="portal-stat"><small>Confirmed Orders</small><strong id="statConfirmed">0</strong></div></div>
+        <div class="portal-card"><h3>Order Management</h3><p class="portal-small" style="margin:0 0 14px">Update statuses in this browser. For production, connect an authenticated backend and database.</p><div class="portal-table-wrap"><table class="portal-table"><thead><tr><th>Reference</th><th>Customer</th><th>Product / Quantity</th><th>Delivery</th><th>Status</th><th>Created</th></tr></thead><tbody id="adminOrderRows"></tbody></table></div><div class="portal-actions"><button class="portal-btn primary" type="button" id="exportOrders">Export CSV</button><button class="portal-btn" type="button" id="refreshOrders">Refresh</button></div></div>
+      </section>
+      <section class="portal-panel" id="settingsPanel">
+        <div class="portal-card"><h3>Local Business Settings</h3><p class="portal-small" style="margin:0 0 14px">Set an optional estimate rate and delivery PIN codes for this browser only. Leave the rate at zero until you enter your actual price.</p><div class="portal-form"><div><label for="ratePerKg">Indicative rate per kg (₹)</label><input id="ratePerKg" type="number" min="0" step="0.01" placeholder="0"></div><div><label for="deliveryPins">Served PIN codes (comma separated)</label><input id="deliveryPins" type="text" placeholder="Enter only verified PIN codes"></div><div class="wide"><button class="portal-btn primary" id="saveSettings" type="button">Save Settings</button><span id="settingsSaved" class="portal-small" aria-live="polite"></span></div></div><hr style="border:0;border-top:1px solid #e4eef4;margin:22px 0"><h3>Price Estimator</h3><div class="portal-form"><div><label for="estimateQty">Quantity (kg)</label><input id="estimateQty" type="number" min="0" step="0.1" placeholder="e.g. 50"></div><div><label for="estimateRate">Rate (₹ per kg)</label><input id="estimateRate" type="number" min="0" step="0.01" placeholder="Uses saved rate"></div><div class="wide"><button class="portal-btn" id="calculateEstimate" type="button">Calculate Estimate</button><p id="estimateResult" class="portal-result" aria-live="polite"></p></div></div><p class="portal-small">An estimate is not a quote. Packaging, delivery, taxes and final pricing may differ; confirm directly before accepting an order.</p><div style="margin-top:20px"><label for="checkPin" style="font-size:12px;font-weight:700">Delivery PIN-code check</label><div class="portal-form"><div><input id="checkPin" inputmode="numeric" maxlength="6" placeholder="Enter PIN code"></div><div><button type="button" class="portal-btn" id="checkDelivery">Check availability</button></div></div><p id="deliveryResult" class="portal-result" aria-live="polite"></p></div></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<a id="quickWhatsApp" href="https://wa.me/918554013478?text=Hello%20Crystal%20Ice%2C%20I%20would%20like%20to%20enquire%20about%20ice%20supply." target="_blank" rel="noopener" aria-label="Quick WhatsApp enquiry" title="Quick WhatsApp enquiry">✆</a>
+<button id="backToTop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+<script>
+document.querySelectorAll(".currentYear").forEach(function(element) {
+    element.textContent = new Date().getFullYear();
+});
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+    const isOpen = navLinks.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+    });
+});
+
+document.querySelectorAll("[data-product]").forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.getElementById("product").value = link.getAttribute("data-product");
+    });
+});
+
+
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("customerName").value.trim();
+    const business = document.getElementById("businessName").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const product = document.getElementById("product").value;
+    const quantity = document.getElementById("quantity").value.trim();
+    const delivery = document.getElementById("delivery").value.trim();
+    const orderDate = document.getElementById("orderDate").value;
+    const frequency = document.getElementById("frequency").value;
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !phone || !product || !quantity || !delivery) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+
+    const whatsappNumber = "918554013478";
+    const order = {
+        id: "CI-" + Date.now().toString().slice(-8),
+        name, business, phone, product, quantity, delivery, orderDate, frequency, message,
+        status: "Pending Review",
+        createdAt: new Date().toISOString()
+    };
+    const savedOrders = JSON.parse(localStorage.getItem("crystalIceOrders") || "[]");
+    savedOrders.unshift(order);
+    localStorage.setItem("crystalIceOrders", JSON.stringify(savedOrders));
+
+    const orderMessage =
+`ICE ORDER ENQUIRY
+-------------------------
+Name: ${name}
+Business: ${business || "Not provided"}
+Customer Phone: ${phone}
+Product: ${product}
+Quantity: ${quantity}
+Delivery Location: ${delivery}
+Preferred Date: ${orderDate || "Flexible / to be discussed"}
+Supply Frequency: ${frequency}
+Additional Requirements: ${message || "None"}
+
+Please share pricing and availability.`;
+
+    const whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(orderMessage);
+
+    window.open(whatsappURL, "_blank");
+});
+
+
+// Lightweight 3D tilt on desktop; naturally disabled for touch and reduced-motion users.
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduceMotion && window.matchMedia("(hover:hover) and (pointer:fine)").matches) {
+    document.querySelectorAll(".product-card, .industry, .contact-card").forEach(card => {
+        card.addEventListener("pointermove", event => {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width;
+            const y = (event.clientY - rect.top) / rect.height;
+            const tiltX = (0.5 - y) * 7;
+            const tiltY = (x - 0.5) * 8;
+            card.style.transform = `perspective(900px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px)`;
+        });
+        card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+    });
+}
+
+// Smooth reveal animations that activate as sections enter the viewport.
+document.documentElement.classList.add("reveal-ready");
+const revealTargets = document.querySelectorAll(
+    ".section-heading, .trust-item, .product-card, .about-image, .about-text, .feature, .industry, .process-card, .info-strip, .faq-item, .order-text, .order-point, .order-form, .form-group, .contact-card, .footer-grid > div, .copyright"
+);
+revealTargets.forEach(function(element) {
+    element.classList.add("reveal");
+});
+if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
+    revealTargets.forEach(function(element) { revealObserver.observe(element); });
+} else {
+    revealTargets.forEach(function(element) { element.classList.add("is-visible"); });
+}
+
+
+
+// Scroll progress and convenient floating actions
+const progressBar = document.getElementById('scrollProgress');
+const backToTop = document.getElementById('backToTop');
+function updateScrollUI() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    progressBar.style.width = progress + '%';
+    backToTop.classList.toggle('visible', window.scrollY > 450);
+}
+window.addEventListener('scroll', updateScrollUI, { passive: true });
+updateScrollUI();
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
+
+
+
+// Customer portal and local demo order-management tools.
+(function(){
+  const overlay=document.getElementById('portalOverlay');
+  const closeBtn=document.getElementById('portalClose');
+  const getOrders=()=>{try{return JSON.parse(localStorage.getItem('crystalIceOrders')||'[]')}catch(e){return []}};
+  const setOrders=(orders)=>localStorage.setItem('crystalIceOrders',JSON.stringify(orders));
+  const getSettings=()=>{try{return JSON.parse(localStorage.getItem('crystalIceSettings')||'{"rate":0,"pins":[]}')}catch(e){return {rate:0,pins:[]}}};
+  const escapeHtml=(value)=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const prettyDate=(value)=>{if(!value)return '—';const d=new Date(value);return isNaN(d)?'—':d.toLocaleDateString()};
+  function renderAdmin(){
+    const orders=getOrders();
+    document.getElementById('statTotal').textContent=orders.length;
+    document.getElementById('statPending').textContent=orders.filter(o=>o.status==='Pending Review').length;
+    document.getElementById('statConfirmed').textContent=orders.filter(o=>o.status==='Confirmed').length;
+    const body=document.getElementById('adminOrderRows');
+    if(!orders.length){body.innerHTML='<tr><td colspan="6" class="portal-empty">No enquiries saved in this browser yet. Submit the website order form to create one.</td></tr>';return;}
+    body.innerHTML=orders.map(o=>`<tr><td><strong>${escapeHtml(o.id)}</strong></td><td>${escapeHtml(o.name)}<br><small>${escapeHtml(o.phone)}</small>${o.business?'<br><small>'+escapeHtml(o.business)+'</small>':''}</td><td>${escapeHtml(o.product)}<br>${escapeHtml(o.quantity)}</td><td>${escapeHtml(o.delivery)}<br><small>${escapeHtml(prettyDate(o.orderDate))}</small></td><td><select data-order-status="${escapeHtml(o.id)}" aria-label="Status for ${escapeHtml(o.id)}">${['Pending Review','Contacted','Confirmed','Preparing','Out for Delivery','Completed','Cancelled'].map(st=>`<option ${o.status===st?'selected':''}>${st}</option>`).join('')}</select></td><td>${escapeHtml(prettyDate(o.createdAt))}</td></tr>`).join('');
+    body.querySelectorAll('[data-order-status]').forEach(sel=>sel.addEventListener('change',()=>{const all=getOrders();const target=all.find(o=>o.id===sel.dataset.orderStatus);if(target){target.status=sel.value;setOrders(all);renderAdmin();}}));
+  }
+  function renderCustomer(){
+    const phone=document.getElementById('lookupPhone').value.replace(/\D/g,'');
+    const host=document.getElementById('customerOrders');
+    if(!phone){host.innerHTML='<p class="portal-empty">Enter your phone number to search.</p>';return;}
+    const orders=getOrders().filter(o=>String(o.phone||'').replace(/\D/g,'')===phone);
+    if(!orders.length){host.innerHTML='<p class="portal-empty">No matching enquiries found in this browser. Orders from other devices are not synced in this prototype.</p>';return;}
+    host.innerHTML='<div class="portal-table-wrap"><table class="portal-table"><thead><tr><th>Reference</th><th>Product</th><th>Quantity</th><th>Status</th><th>Date</th></tr></thead><tbody>'+orders.map(o=>`<tr><td>${escapeHtml(o.id)}</td><td>${escapeHtml(o.product)}</td><td>${escapeHtml(o.quantity)}</td><td>${escapeHtml(o.status)}</td><td>${escapeHtml(prettyDate(o.createdAt))}</td></tr>`).join('')+'</tbody></table></div>';
+  }
+  function openPortal(panel){overlay.classList.add('open');document.body.style.overflow='hidden';if(panel){document.querySelectorAll('[data-portal-tab]').forEach(b=>b.classList.toggle('active',b.dataset.portalTab===panel));document.querySelectorAll('.portal-panel').forEach(p=>p.classList.toggle('active',p.id===panel));}renderAdmin();}
+  function closePortal(){overlay.classList.remove('open');document.body.style.overflow='';}
+  document.querySelectorAll('[data-open-portal]').forEach(btn=>btn.addEventListener('click',()=>openPortal()));
+  closeBtn.addEventListener('click',closePortal);
+  overlay.addEventListener('click',e=>{if(e.target===overlay)closePortal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('open'))closePortal();});
+  document.querySelectorAll('[data-portal-tab]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-portal-tab]').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.portal-panel').forEach(p=>p.classList.toggle('active',p.id===btn.dataset.portalTab));renderAdmin();}));
+  document.getElementById('lookupOrders').addEventListener('click',renderCustomer);
+  document.getElementById('refreshOrders').addEventListener('click',renderAdmin);
+  document.getElementById('exportOrders').addEventListener('click',()=>{const orders=getOrders();if(!orders.length){alert('There are no enquiries to export yet.');return;}const keys=['id','name','business','phone','product','quantity','delivery','orderDate','frequency','message','status','createdAt'];const csv=[keys.join(','),...orders.map(o=>keys.map(k=>'"'+String(o[k]??'').replace(/"/g,'""')+'"').join(','))].join('\r\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='crystal-ice-orders.csv';a.click();URL.revokeObjectURL(url);});
+  const settings=getSettings();document.getElementById('ratePerKg').value=settings.rate||'';document.getElementById('estimateRate').value=settings.rate||'';document.getElementById('deliveryPins').value=(settings.pins||[]).join(', ');
+  document.getElementById('saveSettings').addEventListener('click',()=>{const rate=Math.max(0,Number(document.getElementById('ratePerKg').value)||0);const pins=document.getElementById('deliveryPins').value.split(',').map(x=>x.trim()).filter(x=>/^\d{6}$/.test(x));localStorage.setItem('crystalIceSettings',JSON.stringify({rate,pins}));document.getElementById('estimateRate').value=rate||'';document.getElementById('settingsSaved').textContent='Saved on this browser.';});
+  document.getElementById('calculateEstimate').addEventListener('click',()=>{const qty=Number(document.getElementById('estimateQty').value);const entered=document.getElementById('estimateRate').value;const rate=entered===''?getSettings().rate:Number(entered);const result=document.getElementById('estimateResult');if(!(qty>0)||!(rate>0)){result.textContent='Enter a quantity and a valid rate above zero. Add your real rate in Business Settings first.';return;}result.textContent='Indicative estimate: ₹'+(qty*rate).toLocaleString('en-IN',{maximumFractionDigits:2})+' (before any extra charges; confirm final quote with Crystal Ice).';});
+  document.getElementById('checkDelivery').addEventListener('click',()=>{const pin=document.getElementById('checkPin').value.trim();const pins=getSettings().pins||[];const result=document.getElementById('deliveryResult');if(!/^\d{6}$/.test(pin)){result.textContent='Please enter a valid 6-digit PIN code.';return;}if(!pins.length){result.textContent='Delivery PIN codes have not been configured yet. Please send an enquiry to confirm coverage.';return;}result.textContent=pins.includes(pin)?'This PIN code is on the configured service list. Please confirm current availability and timing with the team.':'This PIN code is not on the configured service list. Contact the team to check possible delivery.';});
+})();
+
+</script>
+
+
+<script>
+(function(){
+ var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+ var s=document.getElementById("hxSnow");
+ if(s&&!rm){for(var i=0;i<26;i++){var e=document.createElement("i"),z=2+Math.random()*4;
+  e.style.cssText="left:"+Math.random()*100+"%;width:"+z+"px;height:"+z+"px;opacity:"+(.25+Math.random()*.55)+";animation-duration:"+(9+Math.random()*14)+"s;animation-delay:-"+Math.random()*20+"s;--x:"+(Math.random()*80-40)+"px";
+  s.appendChild(e);}}
+ var t=document.querySelectorAll(".section-heading,.product-card,.industry,.process-card,.contact-card,.about-text,.about-image,.faq-item");
+ t.forEach(function(el,i){el.classList.add("reveal-up");el.style.transitionDelay=(i%4)*80+"ms"});
+ if("IntersectionObserver" in window){var o=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");o.unobserve(x.target)}})},{threshold:.12});t.forEach(function(el){o.observe(el)})}
+ else{t.forEach(function(el){el.classList.add("in")})}
+})();
+</script>
+</body>
+</html>
